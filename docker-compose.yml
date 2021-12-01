@@ -1,0 +1,12 @@
+version: "3"
+services:
+  postgres:
+    container_name: pg_local
+    hostname: postgres
+    image: postgres:alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: db_user
+      POSTGRES_PASSWORD: d9383e87-c02f-4032-8b18-7515cbbe0b8f
+      POSTGRES_DB: dev
